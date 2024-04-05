@@ -18,7 +18,7 @@ def make_env(body, **kwargs):
     if kwargs['controller'] in ['DECENTRALIZED']:
         env = LocalObservationWrapper(env, **kwargs)
         env = LocalActionWrapper(env, **kwargs)
-    elif kwargs['controller'] in ['CENTRALIZED', 'OPEN_LOOP']:
+    elif kwargs['controller'] in ['CENTRALIZED', 'FIXED']:
         env = GlobalObservationWrapper(env, **kwargs)
         env = GlobalActionWrapper(env, **kwargs)
     else:

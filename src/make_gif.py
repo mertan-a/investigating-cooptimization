@@ -33,7 +33,7 @@ class MAKEGIF():
             if self.kwargs['controller'] in ['DECENTRALIZED']:
                 env = LocalObservationWrapper(env, **self.kwargs)
                 env = LocalActionWrapper(env, **self.kwargs)
-            elif self.kwargs['controller'] in ['CENTRALIZED', 'OPEN_LOOP']:
+            elif self.kwargs['controller'] in ['CENTRALIZED', 'FIXED']:
                 env = GlobalObservationWrapper(env, **self.kwargs)
                 env = GlobalActionWrapper(env, **self.kwargs)
             else:

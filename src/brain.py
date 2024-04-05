@@ -137,15 +137,15 @@ class DECENTRALIZED(BRAIN):
         return True
 
 
-class OPEN_LOOP(BRAIN):
+class FIXED(BRAIN):
     '''
-    open loop controller
+    fixed controller
     uses global observation wrapper
     pulls the time from the global observation
     and the action is the same as the time
     '''
     def __init__(self, args):
-        BRAIN.__init__(self, "OPEN_LOOP", args)
+        BRAIN.__init__(self, "FIXED", args)
 
     def get_action(self, observation):
         actions = np.ones((self.args.bounding_box[0]*self.args.bounding_box[1])) * observation[-1] - 0.4

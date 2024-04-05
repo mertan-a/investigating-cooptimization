@@ -40,7 +40,7 @@ parser.add_argument('--use_pretrained_brain', '-uptbr',
 parser.add_argument('--pretrained_brain', '-ptbr',
                     help='specify the path to the pretrained brain\'s pkl')
 parser.add_argument('--controller', '-ctrl', help='specify the controller',
-                    choices=['DECENTRALIZED', 'CENTRALIZED', 'OPEN_LOOP'], default='DECENTRALIZED')
+                    choices=['DECENTRALIZED', 'CENTRALIZED', 'FIXED'], default='DECENTRALIZED')
 
 parser.add_argument('-id', '--id', type=int, default=1,
                     help='id of the job')

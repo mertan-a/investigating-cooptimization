@@ -3,7 +3,7 @@ import numpy as np
 
 from individual import INDIVIDUAL
 from body import FIXED_BODY, BASIC_BODY
-from brain import DECENTRALIZED, CENTRALIZED, OPEN_LOOP
+from brain import DECENTRALIZED, CENTRALIZED, FIXED
 
 
 class POPULATION(object):
