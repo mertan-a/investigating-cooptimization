@@ -4,7 +4,7 @@ This is the code for the paper [Investigating Premature Convergence in Co-optimi
 
 ## Very (very) short summary
 
-During co-optimization, brains become too specialized for particular bodies and don't transfer well to others, resulting in poor search over the morphology space. We showed that not having to optimize a brain -- fixed controller case, achieves significantly better performance. 
+During co-optimization, brains become too specialized for particular bodies and don't transfer well to others, resulting in poor search over the morphology space. We demonstrated this by showing that not having to optimize a brain -- fixed controller case, achieves significantly better performance.
 
 <div align='center'>
 <img src="images/summary.png"></img>
